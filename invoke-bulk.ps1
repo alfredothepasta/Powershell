@@ -9,6 +9,7 @@ function invoke-bulk {
     Begin {    
         $computername = get-content -path $computerListPath
         $conFail = @()
+        $cred = get-credential
     }
 
     Process {
