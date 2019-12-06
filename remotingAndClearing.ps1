@@ -8,7 +8,7 @@ $computerName = read-host -prompt 'Input computer name'
 New-PSSession -ComputerName $computerName -Credential $cred | Enter-PSSession
 
 # This chunk can be run remotely or locally
-# Change this to set the threshold for how recently a user should have logged in default 1 year
+# Change this to set the threshold for how recently a user should have logged in. Default is 1 year
 $numDays = 365 
 
 
